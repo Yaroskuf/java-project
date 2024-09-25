@@ -19,19 +19,24 @@ public class Третья {
             m[i] = scanner.nextInt();
         }
 
-        String z;
+
+        boolean z = true;
+
         for (int j = 0; j < y; j++) {
             if (m[j] == 0) {
-                z = "False";
-                System.out.println(z);
-                break;
-            } else {
-                z = "True";
-                System.out.println(z);
+                z = false;
                 break;
             }
+        }
+
+
+        if (z) {
+            System.out.println(z);
+        } else {
+            System.out.println(z);
         }
 
         scanner.close();
     }
 }
+
